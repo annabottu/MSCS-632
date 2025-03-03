@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+  <head>
+     <!-- Set character encoding and viewport settings for responsiveness - 
+        it ensures that text displays correctly across different devices and screen sizes -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--this gets displayed at the top of the tab-->
+    <title>Assignment 4</title>
+
+    <!-- Link to the external CSS file for styling -->
+    <link rel="stylesheet" href="styles.css">
+  </head>
+
+  <body>
+    <h1>Employee Schedule</h1>
+    <form id="shift-form">
+
+        <div style="padding-bottom: 40px;">
+            <label> Employee Full Name:
+            <input type="text" id="employeeName" placeholder="First and Last Name" /></label>
+        </div>
+
+        <!-- Dropdown for Shift Preference -->
+        <div  style="padding-bottom: 40px;">
+            <!-- Dropdown menu for selecting shift -->
+            <label for="shift-dropdown">Sunday:</label>
+            <select id="sunday-shift-preference-dropdown">
+                <!-- Dropdown options -->
+                <option value="">--Select--</option>
+                <option value="Morning">Morning</option>
+                <option value="Afternoon">Afternoon</option>
+                <option value="Evening">Evening</option>
+            </select>
+            </label>
+        </div>
+
+        <div  style="padding-bottom: 40px;">
+            <!-- Dropdown menu for selecting shift -->
+            <label for="shift-dropdown">Monday:</label>
+            <select id="monday-shift-preference-dropdown">
+                <!-- Dropdown options -->
+                <option value="">--Select--</option>
+                <option value="Morning">Morning</option>
+                <option value="Afternoon">Afternoon</option>
+                <option value="Evening">Evening</option>
+            </select>
+            </label>
+        </div>
+
+        <div  style="padding-bottom: 40px;">
+            <!-- Dropdown menu for selecting shift -->
+            <label for="shift-dropdown">Tuesday:</label>
+            <select id="tuesday-shift-preference-dropdown">
+                <!-- Dropdown options -->
+                <option value="">--Select--</option>
+                <option value="Morning">Morning</option>
+                <option value="Afternoon">Afternoon</option>
+                <option value="Evening">Evening</option>
+            </select>
+            </label>
+        </div>
+
+        <div  style="padding-bottom: 40px;">
+            <!-- Dropdown menu for selecting shift -->
+            <label for="shift-dropdown">Wednesday:</label>
+            <select id="wednesday-shift-preference-dropdown">
+                <!-- Dropdown options -->
+                <option value="">--Select--</option>
+                <option value="Morning">Morning</option>
+                <option value="Afternoon">Afternoon</option>
+                <option value="Evening">Evening</option>
+            </select>
+            </label>
+        </div>
+
+        <div  style="padding-bottom: 40px;">
+            <!-- Dropdown menu for selecting shift -->
+            <label for="shift-dropdown">Thursday:</label>
+            <select id="thursday-shift-preference-dropdown">
+                <!-- Dropdown options -->
+                <option value="">--Select--</option>
+                <option value="Morning">Morning</option>
+                <option value="Afternoon">Afternoon</option>
+                <option value="Evening">Evening</option>
+            </select>
+            </label>
+        </div>
+
+        <div  style="padding-bottom: 40px;">
+            <!-- Dropdown menu for selecting shift -->
+            <label for="shift-dropdown">Friday:</label>
+            <select id="friday-shift-preference-dropdown">
+                <!-- Dropdown options -->
+                <option value="">--Select--</option>
+                <option value="Morning">Morning</option>
+                <option value="Afternoon">Afternoon</option>
+                <option value="Evening">Evening</option>
+            </select>
+            </label>
+        </div>
+
+        <div  style="padding-bottom: 40px;">
+            <!-- Dropdown menu for selecting shift -->
+            <label for="shift-dropdown">Saturday:</label>
+            <select id="saturday-shift-preference-dropdown">
+                <!-- Dropdown options -->
+                <option value="">--Select--</option>
+                <option value="Morning">Morning</option>
+                <option value="Afternoon">Afternoon</option>
+                <option value="Evening">Evening</option>
+            </select>
+            </label>
+        </div>
+
+        <button id="addEmployee" type="button">Add Employee</button>
+        <button id="mySubmit" type="button">Submit</button>
+    </form>
+
+    <hr>
+
+    <h2>Employee Shift Schedule</h2>
+    <table id="schedule-table">
+        <thead>
+            <tr>
+                <th>Day</th>
+                <th>Morning</th>
+                <th>Afternoon</th>
+                <th>Evening</th>
+            </tr>
+        </thead>
+        <tbody id="schedule-table-body"></tbody>
+    </table>
+
+    <!-- Link to the external JavaScript file -->
+    <script src="Assignment4_Schedules.js"></script>
+  </body>
+</html>
