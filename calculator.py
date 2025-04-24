@@ -1,6 +1,6 @@
 from collections import Counter
 
-class StatisticsCalculator:
+class :
     def __init__(self, numbers):
         self.numbers = numbers
 
@@ -33,7 +33,7 @@ class StatisticsCalculator:
 
 
 if __name__ == "__main__":
-    numbers = [7,9,11,25,5,9,77,9,2,5]
+    numbers = [3, 7, 9, 44, 70, 5, 7, 4, 7]
    
     print("Mean:",  StatisticsCalculator(numbers).mean())
     print("Median:",  StatisticsCalculator(numbers).median())
